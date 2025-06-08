@@ -1,0 +1,529 @@
+<!DOCTYPe html>
+<html lang="id">
+<head>
+    <link href="https:fonts.googleapis.com/css2?family=Poppins:wght2440;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.icon" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"=device-width, initial-scale=1.0">
+    <title>Outfit korean style - Beranda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    .product-card img {
+        width: 100%; /* Mengatur lebar gambar agar sesuai dengan kolom */
+        height: auto; /* Mengatur tinggi gambar secara otomatis untuk menjaga rasio aspek */
+        max-height: 350px; /*Mengatur tinggi maksimum untuk menjaga ukuran gambar */
+        object-fit: cover; /*Memastikan gambar terpotong dengan baik jika perlu */
+        border-radius: 10px; /*Menjaga sudut gambar tetap melengkung */
+    }
+</style>
+<style>
+     .logo img {
+        height: 70px;
+        .search-bar {
+            margin-top: 1rem;
+        }
+        /* Produk Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0,05);
+            text-align: center;
+            padding: 1rem;
+            display: flex;/* Menggunakan flexbox untuk tata letak konten */
+            flex-direction: column;
+            justify-content: space-between; /* Untuk mendorong tombol ke bawah */
+        }
+
+        .product-card img {
+            width: 50%
+            height: 150 px;
+            object-fit: cover;
+            border-radius: 10 px;
+        }
+
+        .product-card h2 {
+            margin-top: 1 rem;
+            font-size: 1.2 rem;
+        }
+
+        .product-card p {
+            margin: 0.5rem 0;
+            flex-grow: 1; /* Agar deskripsi produk bisa mengisi ruang */
+        }
+</style>
+<body>
+    <header>
+        <div class="header container">
+            <h1>Outer Korean Style</h1>
+            <nav>
+                <u1>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#tentang-kami">Tentang kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="keranjang">🛒 <span id="cart-count" class="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="beranda" class="hero section">
+            <h2>Koleksi Outer Penuh Warna, Ceriakan Gayaku!</h2>
+            <p>Temukan Outer Korean Style Untuk setiap Momenmu.</p>
+            <a href="#produk" class="button-shop-now">Belanja Sekarang!</a>
+        </section>
+
+        <section id=produk class="product-section">
+            <h2>Produk Terbaru</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <h3>Outer Army</h3>
+                    <img src="Outer Army.jpg" alt="Outer Army" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna army elegan.</p>
+                    <p class="Product-price">Rp 35.000</p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                <article class="product-card">
+                    <h3>Outer Maroon</h3>
+                    <img src="Outer Maroon.jpg" alt="Outer Maroon" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna maroon menyala.</p>
+                    <p class="Product-price">Rp 45.000</p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                <article class="product-card">
+                    <h3>Outer Brown</h3>
+                    <img src="Outer Brown.jpg" alt="Outer Brown" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna coklat kalem.</p>
+                    <p class="product-price">Rp 40.000</p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                <article class="product-card">
+                    <h3>Outer Black</h3>
+                    <img src="Outer Hitam.jpg" alt="Outer Black" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna hitam menawan.</p>
+                    <p class="product-price">Rp 35.000 </p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                <article class="product-card">
+                    <h3>Outer Soft Pink</h3>
+                    <img src="Outer Soft Pink.jpg" alt="Outer Soft Pink" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna pink yang lembut.</p>
+                    <p class="product-price">Rp 30.000 </p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                <article class="product-card">
+                    <h3>Outer White</h3>
+                    <img src="Outer White.jpg" alt="Outer White" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna putih yang feminim.</p>
+                    <p class="product-price">Rp 30.000 </p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                </article class="product-card">     
+                    <h3>Outer Navy</h3>
+                    <img src="Outer Navy.jpg" alt="Outer Navy" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna navy yang memukau.</p>
+                    <p class="product-price">Rp 35.000 </p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+                <article class="product-card">
+                    <h3>Outer Violet</h3>
+                    <img src="Outer Violet.jpg" alt="Outer Violet" class="product-image">
+                    <p class="product-description"> Outer dengan sentuhan warna navy yang dewasa.</p>
+                    <p class="product-price">Rp 40.000 </p>
+                    <button class="add-to-cart button-shop-now">Tambah ke keranjang</button>
+                </article>
+            </div>
+        </section>
+
+        </section id="tentang-kami" class="about-section">
+             <h2>Tentang Outfit Korean Style</h2>
+             <p><strong>Outfit Korean Style <strong>
+             <p>Sejak didirikan pada tahun 2024 di Bandung, kami berkomitmen menyediakan produk berkualitas tinggi dengan desain inovatif dan harga terjangkau. Mari bersama merayakan keindahan gayamu!</p>
+             </section>
+
+             <section id="'keranjang" class="cart-placeholder-section">
+                <h2>keranjang Belanja Anda</h2>
+             <div id="cart-items" class="cart-items"></div>
+             <p>Jumlah item di keranjang: <span id="display-cart-count">0</span</span></p>
+             <p>Total harga: <span id=""display-cart-count">0</span></p>
+             <p class="note-cart">*(Fungsionalitas keranjang ini adalah simulasi dasar. Item tidak akan disimpan saat Anda menutup halaman.)*</p>
+             <h3>Pilihan pembayaran</h3>
+             <select id="payment-method">
+                 <option value="credit-card">Kartu Kredit</option>
+                 <option value="bank-transfer">Transfer Bank</option>
+                 <option value="cash-on-delivery">Bayar di Tempat</option>
+             <select>
+            <button id="checkout-button" class="button-checkout">Checkout</button>
+        </section>
+
+            </section id="kontak" class="contact-section">
+                 <h2>Hubungi Kami</h2>
+                 <p>Punya pertanyaan atau butuh bantuan? Jangan ragu untuk mengubungi kami!</p>
+                 <p>Email: outfitkoreanstyle@gmail.com
+                 <p>Telepon :08123456789
+                 <p>Tiktok: koreanstyle_123
+                 <p>Alamat: jalan pahlawan N0 345 Bandung
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <p>&copy; 2024 Outfit Korean Style. Semua Hak dilindungi.</p>
+                <div class="footer-links">
+                </div>
+            </div>
+            </footer>
+
+            <script>
+                let cartCountElement = 0;
+                let cartTotal = 0;
+                const cartItems = [];
+
+            const cartCountElement = document.getElementById(cart-count');
+            const displayCartCountElement = document.getElementById('display-cart-count');
+            const displayCartTotalelement = document.getElementById('display-cart-total');
+            const addToCarButtons = document.querySelectorall('.add-to-cart);
+
+            addToCartButtons. for Each(button=> {
+               button.addEventListener('clicik', () => {}
+                  const productCard = button.closest('product-card');
+                  const productName = productCard.querySelector('h3').textContent
+                  const priceText = productCard.queryselector('.product-price').textContent;
+                  const priceValue = parseInt9pricetext.replace('Rp ', '').replace('.','')); // konversi harga ke angka
+
+                  // Cek apakah item sudah ada di keranjang
+                  const existingItem = CartItems.find (item=> item.name ===productName);
+                  if (existingItem) {
+                      existingItem.quantity++;
+                  } else {
+                      cartItems push({ name: productname, price: priceValue, quantity: 1 }) ;
+                  }
+
+                  // Update cart count and total
+                  cartCount++;
+                  cartCountelement.textContent = cartCount;
+                  displayCartCountElement.textcontent = cartCount;
+
+                  cartTotal += priceValue;
+                  displayCartTotalElement.textContent = 'Rp ${cartTotal.toLocalestring('id-ID')}'; // Format ke Rupiah
+
+                  // Tampilkan item di keranjang
+                  displayCartItems ();
+
+                  alert('Produk ditambahkan ke keranjang!'):
+            });
+         });
+
+         // Fungsi untuk menampilkan item di keranjang
+         function displayCartItems() {
+             const cartItemsContainer = document.getElementById('cart-items');
+             cartItemsContainer.innerHTML = ''; // Kosongkan container sebelum menambahkan item baru
+
+             cartItems.ForEach(item=>) {
+                 const itemElement = document.createElement('div');
+                 ItemElement.classList.add('cart-item');
+                 ItemElement.innerHTML =
+                     <h4>${item.name}</h4>
+                     <p>Harga: Rp ${item.price.toLocalestring('id-ID')}</p>
+                     <p>Jumlah: </button class="decreasw-quantity" data-name='${item.name}">-</button> ${item.quantity} ,button class="increase-quantity" data-name="${item.name}">+</button></p>
+                 ';
+                cartItemsContainer.appendChild (ItemElement);
+                });
+            
+            // Tambahkan event Listener untuk tombol tambah dan kurangi
+            document.querySelectorAll('.increase-quantity').forEach(button=> {
+                button.addEventListener('click', () =>> {
+                    const productName = button.getAttributer('data-name');
+                    const item = cartItems,find(item=>item.name === productName);
+                    Item.quantity++;
+                    cart-Count++;
+                    cart-Total += item.price;
+                    updateCartDisplay();
+                });
+            });
+
+            document.querySelectorAll('decrease-quantity').forEach(button => {
+                button.addEvenetListener('click', () => {
+                  const productName = button.getAttributer('data-name');
+                  const item = cartItems.find(Item => item.name ===productName);
+                  if (item.quantity > 1 ) {
+                      Item.quantity--;
+                      cart-Count--;
+                      cart-Total -= item price
+                  } else {
+                      cartItems.splice(cartItems.index0f(item), 1); //Hapus item jika jumlahnya 0
+                  }
+                  updateCartDisplay();
+            });
+        });
+    }
+
+    function updateCartDisplay() {
+       cartCountElement.textContent = cartCount;
+       displayCartCountElement.textcontent = cartCount;
+       displayCartTotalElement.textContent = 'Rp ${cartTotal.toLocalestring('id-ID')}'; // Format ke Rupiah
+       displayCartItems();
+    }
+
+    //Untuk memastikan tautan navigasi berfungsi ke bagian yang benar
+    document.querySelectorAll('nav a')forEach(anchor => {}
+       anchor.addEventListener ('click', function (e) {
+          e.preventDefault();
+          document.queryselector(this.getAttribute('href')).scrollIntoView({
+              behaviour: 'smooth'
+          });
+      });
+ });
+
+// Untuk tautan di hero section
+document.querySelector('button-shop-now').addEventListener('click,function(e)' {
+    e.preventDefault()
+    document.querySelector(this.getAttribute('href')).scrollIntoview({
+        behaviour: 'smooth'
+    });
+ });
+ </script>
+</body>
+</html>
+<style class="css">@media (max-width: 768px) {
+   .header-container, main {
+       flex-direction; column;
+       padding; 1rem;
+   }
+
+   .product-grid {
+       grid-template-columns: 1fr;
+   }
+
+   header nav ul {
+       flex-direction: column;
+       gap: 1rem;
+   }
+}
+</style>
+<style>/* General Body Styles */
+    body {
+        font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins (opsional,bisa diganti position
+        margin: 0;
+        padding: 0;
+        line-height 1.6;
+        background-color: #fce4ec; /* Background cerah pink muda */
+        color: #333;
+    }
+
+    /* Header Styles */
+    header {
+        background-color: #166ad8; /* Ungu gelap */
+        color: #fff;
+        padding: 1 rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header-container {
+        max-width: 1200 px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    header h1 {
+        margin 0;
+        font-size 2.2rem;
+        color: 3ffe082; /* Kuning cerah */
+    }
+
+    header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 2.2rem;
+        display: flex; /* Menu navigasi horizontal */
+    }
+
+    header nav ul li {
+        margin-left: 2rem;
+    }
+
+    header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1 rem;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    header nav uli a:hover {
+        color: #a7ffeb; /* Biru muda cerah */
+        transforms: translateY(-2px);
+    }
+
+    .cart-icon {
+        font-size: 1.8rem;
+    }
+
+    .cart-icon a {
+        color: #ffe082; /* Kuning cerah */
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .cart-icon a:hover {
+        color: #a7ffeb; /* Biru muda cerah */
+    }
+
+    .cart-count {
+        background-color: #273bf0; /* Merah cerah */
+        color: white;
+        border-radius: 50%;
+        padding: 0.2em 0.5em;
+        font-size: 0.8rem;
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+        min-width: 1.5rem; /* Untuk angka 1 digit */
+        text-align: center;
+    }
+
+    /* Main Content Styles */
+    main { 
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1 rem;
+    }
+
+    section {
+        background-color: #fff;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba (0,0,0,0.15);
+    }
+
+    h2 {
+       color: #6a1b9a; /* Ungu terang */
+       margin-top: 0;
+       margin-bottom: 2rem;
+       text-align: center;
+       font-size: 2.5rem;
+       letter-spacing: 1px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        text-align: center;
+        background-image: linear-gradient(135deg, 3f8bbd0, #e1bee7); /* Gradien pink-ungu */
+        padding: 4rem 2rem;
+        border-radius: 12px;
+        color: #4a148c; /* Ungu gelap untuk teks */
+        text-shadow: 1px 1px 2px rgba (255,255,255,0.7);
+    }
+
+    .hero-section h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        color: #4a148c;
+    }
+
+    .hero-section p {
+        font-size: 1.4rem;
+        color: #6a1b9a;
+        margin-bottom: 2rem;
+    }
+
+    .button-shop-now:
+       background-color: #ff6f00; /* Orange cerah */
+       color: white;
+       border: none;
+       padding: 1rem 2rem;
+       border-radius: 30px;
+       cursor: pointer;
+       font-size: 1.2rem;
+       font-weight: bold;
+       text-decoration: none;
+       transition: background-color 0.3s ease, transform 0.2s ease;
+       box-shadow: 0 4px 8px rgba (0,0,0,0.2);
+    }
+
+    .button-shop-now:hover {
+        background-color: #ff8f00; /* Orange lebih terang */
+        transform: translateY(-3px);
+    }
+
+    /* Checkout Button Styles */
+    .button-checkout {
+       background-color: #4caf50; /* Hijau cerah */
+       color: white;
+       border: none;
+       padding: 1rem 2rem;
+       border-radius: 30px;
+       cursor: pointer;
+       font-size: 1.2rem;
+       font-weight: bold;
+       text-decoration: none;
+       transition: background-color 0.3s ease, transform 0.2s ease;
+       box-shadow: 0 4px 8px rgba(0,0,0,0.2)
+       margin-top: 1rem;
+    }
+
+    .button-checkout:hover {
+        background-color: #66bb6a; /* Hijau lebih terang */
+        transform: traslateY(-3px);
+    }
+    
+    /* Product Section */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat (auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .product-card {
+        border: 1px solid #6283f0; /* Pink */
+        border-radius: 12px;
+        padding: 1.8rem;
+        text-align
+    
+
+
+
+
+
+
+
+
+
+
+
+            
+                  
+
+
+                
+
+
+
+
+
+
+
+
+
